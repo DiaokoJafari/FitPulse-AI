@@ -1,13 +1,13 @@
 //
-//  FitPulse_AI_Watch_Watch_AppUITests.swift
-//  FitPulse AI Watch Watch AppUITests
+//  FitPulse_AI_Watch_AppUITests.swift
+//  FitPulse AI Watch AppUITests
 //
 //  Created by Diaoko Jafari on 08/11/2025.
 //
 
 import XCTest
 
-final class FitPulse_AI_Watch_Watch_AppUITests: XCTestCase {
+final class FitPulse_AI_Watch_AppUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

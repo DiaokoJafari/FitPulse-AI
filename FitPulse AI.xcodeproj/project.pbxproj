@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B94798F52EBFEB920037ED8D /* FitPulse AI Watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B94798F42EBFEB920037ED8D /* FitPulse AI Watch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B94798F52EBFEB920037ED8D /* FitPulse AI Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B94798F42EBFEB920037ED8D /* FitPulse AI Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B94799172EBFEB930037ED8D /* FitPulse AI Watch.app in Resources */ = {isa = PBXBuildFile; fileRef = B94798D22EBFEB900037ED8D /* FitPulse AI Watch.app */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +77,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				B94798F52EBFEB920037ED8D /* FitPulse AI Watch Watch App.app in Embed Watch Content */,
+				B94798F52EBFEB920037ED8D /* FitPulse AI Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,9 +91,9 @@
 		B94798D22EBFEB900037ED8D /* FitPulse AI Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FitPulse AI Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B94798DE2EBFEB920037ED8D /* FitPulse AI WatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FitPulse AI WatchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B94798E82EBFEB920037ED8D /* FitPulse AI WatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FitPulse AI WatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B94798F42EBFEB920037ED8D /* FitPulse AI Watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FitPulse AI Watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B94799032EBFEB930037ED8D /* FitPulse AI Watch Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FitPulse AI Watch Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B947990D2EBFEB930037ED8D /* FitPulse AI Watch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FitPulse AI Watch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B94798F42EBFEB920037ED8D /* FitPulse AI Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FitPulse AI Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B94799032EBFEB930037ED8D /* FitPulse AI Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FitPulse AI Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B947990D2EBFEB930037ED8D /* FitPulse AI Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FitPulse AI Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -127,14 +127,14 @@
 			path = "FitPulse AI WatchUITests";
 			sourceTree = "<group>";
 		};
-		B94798F82EBFEB920037ED8D /* FitPulse AI Watch Watch App */ = {
+		B94798F82EBFEB920037ED8D /* FitPulse AI Watch App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "FitPulse AI Watch Watch App";
+			path = "FitPulse AI Watch App";
 			sourceTree = "<group>";
 		};
-		B94799062EBFEB930037ED8D /* FitPulse AI Watch Watch AppTests */ = {
+		B94799062EBFEB930037ED8D /* FitPulse AI Watch AppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "FitPulse AI Watch Watch AppTests";
+			path = "FitPulse AI Watch AppTests";
 			sourceTree = "<group>";
 		};
 		B94799102EBFEB930037ED8D /* FitPulse AI Watch Watch AppUITests */ = {
@@ -220,8 +220,8 @@
 				B94798D32EBFEB900037ED8D /* FitPulse AI Watch */,
 				B94798E12EBFEB920037ED8D /* FitPulse AI WatchTests */,
 				B94798EB2EBFEB920037ED8D /* FitPulse AI WatchUITests */,
-				B94798F82EBFEB920037ED8D /* FitPulse AI Watch Watch App */,
-				B94799062EBFEB930037ED8D /* FitPulse AI Watch Watch AppTests */,
+				B94798F82EBFEB920037ED8D /* FitPulse AI Watch App */,
+				B94799062EBFEB930037ED8D /* FitPulse AI Watch AppTests */,
 				B94799102EBFEB930037ED8D /* FitPulse AI Watch Watch AppUITests */,
 				B9073B982EBE9DE6008EA7FA /* Products */,
 			);
@@ -236,9 +236,9 @@
 				B94798D22EBFEB900037ED8D /* FitPulse AI Watch.app */,
 				B94798DE2EBFEB920037ED8D /* FitPulse AI WatchTests.xctest */,
 				B94798E82EBFEB920037ED8D /* FitPulse AI WatchUITests.xctest */,
-				B94798F42EBFEB920037ED8D /* FitPulse AI Watch Watch App.app */,
-				B94799032EBFEB930037ED8D /* FitPulse AI Watch Watch AppTests.xctest */,
-				B947990D2EBFEB930037ED8D /* FitPulse AI Watch Watch AppUITests.xctest */,
+				B94798F42EBFEB920037ED8D /* FitPulse AI Watch App.app */,
+				B94799032EBFEB930037ED8D /* FitPulse AI Watch AppTests.xctest */,
+				B947990D2EBFEB930037ED8D /* FitPulse AI Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -385,9 +385,9 @@
 			productReference = B94798E82EBFEB920037ED8D /* FitPulse AI WatchUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		B94798F32EBFEB920037ED8D /* FitPulse AI Watch Watch App */ = {
+		B94798F32EBFEB920037ED8D /* FitPulse AI Watch App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B94799252EBFEB930037ED8D /* Build configuration list for PBXNativeTarget "FitPulse AI Watch Watch App" */;
+			buildConfigurationList = B94799252EBFEB930037ED8D /* Build configuration list for PBXNativeTarget "FitPulse AI Watch App" */;
 			buildPhases = (
 				B94798F02EBFEB920037ED8D /* Sources */,
 				B94798F12EBFEB920037ED8D /* Frameworks */,
@@ -398,18 +398,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				B94798F82EBFEB920037ED8D /* FitPulse AI Watch Watch App */,
+				B94798F82EBFEB920037ED8D /* FitPulse AI Watch App */,
 			);
-			name = "FitPulse AI Watch Watch App";
+			name = "FitPulse AI Watch App";
 			packageProductDependencies = (
 			);
 			productName = "FitPulse AI Watch Watch App";
-			productReference = B94798F42EBFEB920037ED8D /* FitPulse AI Watch Watch App.app */;
+			productReference = B94798F42EBFEB920037ED8D /* FitPulse AI Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B94799022EBFEB930037ED8D /* FitPulse AI Watch Watch AppTests */ = {
+		B94799022EBFEB930037ED8D /* FitPulse AI Watch AppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B94799292EBFEB930037ED8D /* Build configuration list for PBXNativeTarget "FitPulse AI Watch Watch AppTests" */;
+			buildConfigurationList = B94799292EBFEB930037ED8D /* Build configuration list for PBXNativeTarget "FitPulse AI Watch AppTests" */;
 			buildPhases = (
 				B94798FF2EBFEB930037ED8D /* Sources */,
 				B94799002EBFEB930037ED8D /* Frameworks */,
@@ -421,18 +421,18 @@
 				B94799052EBFEB930037ED8D /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				B94799062EBFEB930037ED8D /* FitPulse AI Watch Watch AppTests */,
+				B94799062EBFEB930037ED8D /* FitPulse AI Watch AppTests */,
 			);
-			name = "FitPulse AI Watch Watch AppTests";
+			name = "FitPulse AI Watch AppTests";
 			packageProductDependencies = (
 			);
 			productName = "FitPulse AI Watch Watch AppTests";
-			productReference = B94799032EBFEB930037ED8D /* FitPulse AI Watch Watch AppTests.xctest */;
+			productReference = B94799032EBFEB930037ED8D /* FitPulse AI Watch AppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B947990C2EBFEB930037ED8D /* FitPulse AI Watch Watch AppUITests */ = {
+		B947990C2EBFEB930037ED8D /* FitPulse AI Watch AppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B947992A2EBFEB930037ED8D /* Build configuration list for PBXNativeTarget "FitPulse AI Watch Watch AppUITests" */;
+			buildConfigurationList = B947992A2EBFEB930037ED8D /* Build configuration list for PBXNativeTarget "FitPulse AI Watch AppUITests" */;
 			buildPhases = (
 				B94799092EBFEB930037ED8D /* Sources */,
 				B947990A2EBFEB930037ED8D /* Frameworks */,
@@ -446,11 +446,11 @@
 			fileSystemSynchronizedGroups = (
 				B94799102EBFEB930037ED8D /* FitPulse AI Watch Watch AppUITests */,
 			);
-			name = "FitPulse AI Watch Watch AppUITests";
+			name = "FitPulse AI Watch AppUITests";
 			packageProductDependencies = (
 			);
 			productName = "FitPulse AI Watch Watch AppUITests";
-			productReference = B947990D2EBFEB930037ED8D /* FitPulse AI Watch Watch AppUITests.xctest */;
+			productReference = B947990D2EBFEB930037ED8D /* FitPulse AI Watch AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -518,9 +518,9 @@
 				B94798D12EBFEB900037ED8D /* FitPulse AI Watch */,
 				B94798DD2EBFEB920037ED8D /* FitPulse AI WatchTests */,
 				B94798E72EBFEB920037ED8D /* FitPulse AI WatchUITests */,
-				B94798F32EBFEB920037ED8D /* FitPulse AI Watch Watch App */,
-				B94799022EBFEB930037ED8D /* FitPulse AI Watch Watch AppTests */,
-				B947990C2EBFEB930037ED8D /* FitPulse AI Watch Watch AppUITests */,
+				B94798F32EBFEB920037ED8D /* FitPulse AI Watch App */,
+				B94799022EBFEB930037ED8D /* FitPulse AI Watch AppTests */,
+				B947990C2EBFEB930037ED8D /* FitPulse AI Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -681,17 +681,17 @@
 		};
 		B94798F72EBFEB920037ED8D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B94798F32EBFEB920037ED8D /* FitPulse AI Watch Watch App */;
+			target = B94798F32EBFEB920037ED8D /* FitPulse AI Watch App */;
 			targetProxy = B94798F62EBFEB920037ED8D /* PBXContainerItemProxy */;
 		};
 		B94799052EBFEB930037ED8D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B94798F32EBFEB920037ED8D /* FitPulse AI Watch Watch App */;
+			target = B94798F32EBFEB920037ED8D /* FitPulse AI Watch App */;
 			targetProxy = B94799042EBFEB930037ED8D /* PBXContainerItemProxy */;
 		};
 		B947990F2EBFEB930037ED8D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B94798F32EBFEB920037ED8D /* FitPulse AI Watch Watch App */;
+			target = B94798F32EBFEB920037ED8D /* FitPulse AI Watch App */;
 			targetProxy = B947990E2EBFEB930037ED8D /* PBXContainerItemProxy */;
 		};
 		B94799162EBFEB930037ED8D /* PBXTargetDependency */ = {
@@ -1307,7 +1307,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B94799252EBFEB930037ED8D /* Build configuration list for PBXNativeTarget "FitPulse AI Watch Watch App" */ = {
+		B94799252EBFEB930037ED8D /* Build configuration list for PBXNativeTarget "FitPulse AI Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B947991F2EBFEB930037ED8D /* Debug */,
@@ -1343,7 +1343,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B94799292EBFEB930037ED8D /* Build configuration list for PBXNativeTarget "FitPulse AI Watch Watch AppTests" */ = {
+		B94799292EBFEB930037ED8D /* Build configuration list for PBXNativeTarget "FitPulse AI Watch AppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B94799212EBFEB930037ED8D /* Debug */,
@@ -1352,7 +1352,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B947992A2EBFEB930037ED8D /* Build configuration list for PBXNativeTarget "FitPulse AI Watch Watch AppUITests" */ = {
+		B947992A2EBFEB930037ED8D /* Build configuration list for PBXNativeTarget "FitPulse AI Watch AppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B94799232EBFEB930037ED8D /* Debug */,

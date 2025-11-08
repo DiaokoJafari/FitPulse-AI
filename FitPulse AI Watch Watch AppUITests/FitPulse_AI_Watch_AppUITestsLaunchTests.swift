@@ -1,13 +1,13 @@
 //
-//  FitPulse_AI_Watch_Watch_AppUITestsLaunchTests.swift
-//  FitPulse AI Watch Watch AppUITests
+//  FitPulse_AI_Watch_AppUITestsLaunchTests.swift
+//  FitPulse AI Watch AppUITests
 //
 //  Created by Diaoko Jafari on 08/11/2025.
 //
 
 import XCTest
 
-final class FitPulse_AI_Watch_Watch_AppUITestsLaunchTests: XCTestCase {
+final class FitPulse_AI_Watch_AppUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

@@ -1,14 +1,14 @@
 //
-//  FitPulse_AI_Watch_Watch_AppTests.swift
-//  FitPulse AI Watch Watch AppTests
+//  FitPulse_AI_Watch_AppTests.swift
+//  FitPulse AI Watch AppTests
 //
 //  Created by Diaoko Jafari on 08/11/2025.
 //
 
 import XCTest
-@testable import FitPulse_AI_Watch_Watch_App
+@testable import FitPulse_AI_Watch_App
 
-final class FitPulse_AI_Watch_Watch_AppTests: XCTestCase {
+final class FitPulse_AI_Watch_AppTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

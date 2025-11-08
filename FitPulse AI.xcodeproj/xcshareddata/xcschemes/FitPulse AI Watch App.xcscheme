@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B94798F32EBFEB920037ED8D"
-               BuildableName = "FitPulse AI Watch Watch App.app"
-               BlueprintName = "FitPulse AI Watch Watch App"
+               BuildableName = "FitPulse AI Watch App.app"
+               BlueprintName = "FitPulse AI Watch App"
                ReferencedContainer = "container:FitPulse AI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -64,8 +64,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B947990C2EBFEB930037ED8D"
-               BuildableName = "FitPulse AI Watch Watch AppUITests.xctest"
-               BlueprintName = "FitPulse AI Watch Watch AppUITests"
+               BuildableName = "FitPulse AI Watch AppUITests.xctest"
+               BlueprintName = "FitPulse AI Watch AppUITests"
                ReferencedContainer = "container:FitPulse AI.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -75,8 +75,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B94799022EBFEB930037ED8D"
-               BuildableName = "FitPulse AI Watch Watch AppTests.xctest"
-               BlueprintName = "FitPulse AI Watch Watch AppTests"
+               BuildableName = "FitPulse AI Watch AppTests.xctest"
+               BlueprintName = "FitPulse AI Watch AppTests"
                ReferencedContainer = "container:FitPulse AI.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -97,8 +97,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B94798F32EBFEB920037ED8D"
-            BuildableName = "FitPulse AI Watch Watch App.app"
-            BlueprintName = "FitPulse AI Watch Watch App"
+            BuildableName = "FitPulse AI Watch App.app"
+            BlueprintName = "FitPulse AI Watch App"
             ReferencedContainer = "container:FitPulse AI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -114,8 +114,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B94798F32EBFEB920037ED8D"
-            BuildableName = "FitPulse AI Watch Watch App.app"
-            BlueprintName = "FitPulse AI Watch Watch App"
+            BuildableName = "FitPulse AI Watch App.app"
+            BlueprintName = "FitPulse AI Watch App"
             ReferencedContainer = "container:FitPulse AI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
