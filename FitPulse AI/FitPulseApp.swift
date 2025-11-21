@@ -13,6 +13,7 @@ struct FitPulseApp: App {
     
     @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
     @StateObject private var router = AppRouter()
+    @StateObject private var onboardingViewModel = OnboardingViewModel()
     
     private let container: ModelContainer = {
         do {
@@ -28,6 +29,7 @@ struct FitPulseApp: App {
                 MainTabView()
             } else {
                 OnboardingView()
+                    .environmentObject(onboardingViewModel)
             }
         }
         .environmentObject(router)
