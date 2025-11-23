@@ -22,6 +22,25 @@ struct OnboardingView: View {
             }
             .tabViewStyle(PageTabViewStyle())
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+            
+            if onboardingViewModel.currentPage != 4 {
+                VStack {
+                    Spacer()
+                    
+                    Button("Skip") {
+                        hasSeenOnboarding = true
+                    }
+                    .foregroundColor(.white)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 10)
+                    .background(
+                        RoundedRectangle(cornerRadius: 12)
+                            .fill(Color.red.opacity(0.8))
+                    )
+                    .padding(.horizontal, 30)
+                    .padding(.bottom, 50)
+                }
+            }
         }
     }
 }

@@ -26,50 +26,46 @@ struct OnboardingPage: View {
     var viewType: OnboardingPageType? = nil
     
     var body: some View {
-        VStack(spacing: 40) {
-            Spacer()
-            Image(image)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 200, height: 200)
-            
-            VStack(spacing: 16) {
-                Text(title)
-                    .font(.title)
-                    .multilineTextAlignment(.center)
-                
-                Text(subtitle)
-                    .font(.title3)
-                    .foregroundColor(.secondary)
-                    .multilineTextAlignment(.center)
-            }
-            
-            Spacer()
-            
-            if let primary = primaryButton {
-                Button(primary) {
-                    onPrimary?()
-                }
-                .buttonStyle(.borderedProminent)
-                .controlSize(.large)
-                
-                if let secondary = secondaryButton {
-                    Button(secondary) {
-                        onSecondary?()
-                    }
-                    .foregroundColor(.secondary)
-                }
-            }
-            
-            if viewType != .finalStep {
-                Button("Skip") {
+        VStack {
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(spacing: 30) {
+                    Image(image)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 200, height: 200)
+                        .padding(.top, 40)
 
+                    VStack(spacing: 16) {
+                        Text(title)
+                            .font(.title)
+                            .multilineTextAlignment(.center)
+
+                        Text(subtitle)
+                            .font(.title3)
+                            .foregroundColor(.secondary)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, 20)
+                    }
+
+                    VStack {
+                        if let primary = primaryButton {
+                            Button(primary) {
+                                onPrimary?()
+                            }
+                            .buttonStyle(.borderedProminent)
+                            .controlSize(.large)
+
+                            if let secondary = secondaryButton {
+                                Button(secondary) {
+                                    onSecondary?()
+                                }
+                                .foregroundColor(.secondary)
+                            }
+                        }
+                    }
                 }
-                .foregroundColor(.gray)
-                .padding(.top, 20)
             }
-            
-            Spacer()
+            .scrollBounceBehavior(.basedOnSize)
         }
     }
 }
