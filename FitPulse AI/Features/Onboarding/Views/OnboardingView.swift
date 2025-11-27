@@ -23,23 +23,20 @@ struct OnboardingView: View {
             .tabViewStyle(PageTabViewStyle())
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
             
-            if onboardingViewModel.currentPage != 4 {
-                VStack {
-                    Spacer()
-                    
-                    Button("Skip") {
-                        hasSeenOnboarding = true
-                    }
-                    .foregroundColor(.white)
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 10)
-                    .background(
-                        RoundedRectangle(cornerRadius: 12)
-                            .fill(Color.red.opacity(0.8))
-                    )
-                    .padding(.horizontal, 30)
-                    .padding(.bottom, 50)
+            VStack {
+                Spacer()
+                
+                Button("Skip") {
+                    hasSeenOnboarding = true
                 }
+                .font(.appButton)
+                .foregroundColor(.white)
+                .buttonStyle(.borderedProminent)
+                .controlSize(.large)
+                .tint(Color.red.opacity(0.8))
+                .padding(.bottom, UIDevice.isIpad ? 100 : 50)
+                .opacity(onboardingViewModel.currentPage == 4 ? 0 : 1)
+                .animation(.easeInOut(duration: 0.2), value: onboardingViewModel.currentPage)
             }
         }
     }

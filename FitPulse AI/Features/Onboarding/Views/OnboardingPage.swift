@@ -28,30 +28,34 @@ struct OnboardingPage: View {
     var body: some View {
         VStack {
             ScrollView(.vertical, showsIndicators: false) {
-                VStack(spacing: 30) {
+                VStack(spacing: UIDevice.isIpad ? 60 : 30) {
                     Image(image)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 200, height: 200)
-                        .padding(.top, 40)
+                        .frame(
+                            width: UIDevice.isIpad ? 300 : 180,
+                            height: UIDevice.isIpad ? 280 : 180
+                        )
+                        .padding(.top, UIDevice.isIpad ? 80 : 40)
 
                     VStack(spacing: 16) {
                         Text(title)
-                            .font(.title)
+                            .font(.appTitle)
                             .multilineTextAlignment(.center)
 
                         Text(subtitle)
-                            .font(.title3)
+                            .font(.appSmallTitle)
                             .foregroundColor(.secondary)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 20)
                     }
 
-                    VStack {
+                    VStack(spacing: 20) {
                         if let primary = primaryButton {
                             Button(primary) {
                                 onPrimary?()
                             }
+                            .font(.appButton)
                             .buttonStyle(.borderedProminent)
                             .controlSize(.large)
 
@@ -59,7 +63,9 @@ struct OnboardingPage: View {
                                 Button(secondary) {
                                     onSecondary?()
                                 }
+                                .font(.appButton)
                                 .foregroundColor(.secondary)
+                                .controlSize(.large)
                             }
                         }
                     }
