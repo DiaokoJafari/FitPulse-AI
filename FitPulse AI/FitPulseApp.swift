@@ -12,7 +12,8 @@ import SwiftData
 struct FitPulseApp: App {
     
     @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
-    @StateObject private var router = AppRouter()
+
+    @StateObject private var coordinator = AppCoordinator()
     @StateObject private var onboardingViewModel = OnboardingViewModel()
     
     private let container: ModelContainer = {
@@ -25,14 +26,42 @@ struct FitPulseApp: App {
     
     var body: some Scene {
         WindowGroup {
-            if hasSeenOnboarding {
-                MainTabView()
-            } else {
-                OnboardingView()
-                    .environmentObject(onboardingViewModel)
+            NavigationStack(path: $coordinator.path) {
+                
+                // MARK: Root View
+                Group {
+                    if hasSeenOnboarding {
+                        MainTabView()
+                    } else {
+                        OnboardingView()
+                            .environmentObject(onboardingViewModel)
+                    }
+                }
+                
+                // MARK: - Navigation Destinations
+                .navigationDestination(for: RootRoute.self) { route in
+                    switch route {
+                        
+                    case .auth(let authRoute):
+                        switch authRoute {
+                        case .login:
+                            EmptyView()
+                        case .register:
+                            EmptyView()
+                        case .forgotPassword:
+                            EmptyView()
+                        }
+                        
+                    case .main(let mainRoute):
+                        switch mainRoute {
+                        case .home:
+                            HomeView()
+                        }
+                    }
+                }
             }
+            .environmentObject(coordinator)
+            .modelContainer(container)
         }
-        .environmentObject(router)
-        .modelContainer(container)
     }
 }

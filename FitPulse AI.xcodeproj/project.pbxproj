@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B94798F52EBFEB920037ED8D /* FitPulse AI Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B94798F42EBFEB920037ED8D /* FitPulse AI Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B94799172EBFEB930037ED8D /* FitPulse AI Watch.app in Resources */ = {isa = PBXBuildFile; fileRef = B94798D22EBFEB900037ED8D /* FitPulse AI Watch.app */; };
+		B9D28D512EDCEC2D0051B2E3 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = B9D28D502EDCEC2D0051B2E3 /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9D28D512EDCEC2D0051B2E3 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +266,7 @@
 			);
 			name = "FitPulse AI";
 			packageProductDependencies = (
+				B9D28D502EDCEC2D0051B2E3 /* Lottie */,
 			);
 			productName = "FitPulse AI";
 			productReference = B9073B972EBE9DE6008EA7FA /* FitPulse AI.app */;
@@ -507,6 +510,9 @@
 			);
 			mainGroup = B9073B8E2EBE9DE6008EA7FA;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B9D28D4F2EDCEC2D0051B2E3 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B9073B982EBE9DE6008EA7FA /* Products */;
 			projectDirPath = "";
@@ -1360,6 +1366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B9D28D4F2EDCEC2D0051B2E3 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B9D28D502EDCEC2D0051B2E3 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9D28D4F2EDCEC2D0051B2E3 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B9073B8F2EBE9DE6008EA7FA /* Project object */;
 }

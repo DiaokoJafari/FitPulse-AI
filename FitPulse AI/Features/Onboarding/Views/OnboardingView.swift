@@ -10,6 +10,7 @@ import SwiftUI
 struct OnboardingView: View {
     @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
     @EnvironmentObject var onboardingViewModel: OnboardingViewModel
+    @EnvironmentObject private var coordinator: AppCoordinator
     
     var body: some View {
         ZStack {

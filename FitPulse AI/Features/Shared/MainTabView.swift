@@ -6,29 +6,65 @@
 //
 
 import SwiftUI
+import Lottie
+
+struct LottieSplashView: UIViewRepresentable {
+    let name: String
+    let completion: (() -> Void)?
+
+    func makeUIView(context: Context) -> UIView {
+        let view = UIView(frame: .zero)
+        let animationView = LottieAnimationView(name: name)
+        animationView.contentMode = .scaleAspectFit
+        animationView.loopMode = .playOnce
+        animationView.play { finished in
+            if finished {
+                completion?()
+            }
+        }
+        animationView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(animationView)
+        NSLayoutConstraint.activate([
+            animationView.heightAnchor.constraint(equalTo: view.heightAnchor),
+            animationView.widthAnchor.constraint(equalTo: view.widthAnchor)
+        ])
+        return view
+    }
+
+    func updateUIView(_ uiView: UIView, context: Context) {}
+}
+
+import SwiftUI
+import Lottie
+
+enum AppTab: Hashable {
+    case home, workouts, stats, settings
+}
 
 struct MainTabView: View {
-    
-    @EnvironmentObject private var router: AppRouter
-    
+
+    @State private var selectedTab: AppTab = .home
+    @State private var showSplash = true
+
     var body: some View {
-        TabView(selection: $router.selectedTab) {
-            HomeView()
-                .tabItem { Label("Home", systemImage: "house") }
-                .tag(AppTab.home)
+        ZStack {
+            TabView(selection: $selectedTab) {
+                HomeView().tag(AppTab.home).tabItem { Label("Home", systemImage: "house") }
+                WorkoutsView().tag(AppTab.workouts).tabItem { Label("Workouts", systemImage: "flame") }
+                StatsView().tag(AppTab.stats).tabItem { Label("Stats", systemImage: "chart.bar") }
+                SettingsView().tag(AppTab.settings).tabItem { Label("Settings", systemImage: "gear") }
+            }
+            .tint(.orange)
             
-            WorkoutsView()
-                .tabItem { Label("Workouts", systemImage: "flame") }
-                .tag(AppTab.workouts)
-            
-            StatsView()
-                .tabItem { Label("Stats", systemImage: "chart.bar") }
-                .tag(AppTab.stats)
-            
-            SettingsView()
-                .tabItem { Label("Settings", systemImage: "gear") }
-                .tag(AppTab.settings)
+            if showSplash {
+                LottieSplashView(name: "ExerciseForHealth") {
+                    // وقتی انیمیشن تموم شد
+                    withAnimation {
+                        showSplash = false
+                    }
+                }
+                .background(Color.white)
+            }
         }
-        .tint(.orange)
     }
 }
