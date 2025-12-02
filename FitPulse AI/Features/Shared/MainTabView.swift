@@ -30,7 +30,7 @@ struct MainTabView: View {
             .tint(.orange)
             
             if showSplash {
-                LottieSplashView(isShowing: $showSplash)
+                LottieSplashView(isShowing: $showSplash, animationName: "ExerciseForHealth")
             }
         }
         .onAppear {

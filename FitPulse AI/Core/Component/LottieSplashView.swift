@@ -11,7 +11,7 @@ import Lottie
 struct LottieSplashView: View {
     
     @Binding var isShowing: Bool
-    let animationName: String = "ExerciseForHealth"
+    let animationName: String
     @State private var opacity: Double = 1.0
     
     var body: some View {
