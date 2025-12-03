@@ -23,23 +23,21 @@ public struct MainAppBar: View {
                     .scaledToFit()
                     .frame(width: 28, height: 28)
             }
-            .padding()
+            .padding(.leading)
+            
+            Text("Fit\nPulse")
+                .font(.system(size: 17, weight: .semibold))
+                .foregroundColor(.gray)
+                .multilineTextAlignment(.leading)
             
             Spacer()
             
             Button {
 
             } label: {
-                Image(systemName: "person.crop.circle")
-                    .font(.system(size: 42, weight: .light))
+                Image(systemName: isUserLoggedIn ? "person.crop.circle" : "person.crop.circle.badge.plus")
+                    .font(.system(size: 43, weight: .light))
                     .foregroundColor(.gray)
-                    .overlay(
-                        Image(systemName: "plus.circle")
-                            .font(.system(size: 17, weight: .semibold))
-                            .offset(x: 16, y: 16)
-                            .foregroundColor(.black)
-                            .opacity(isUserLoggedIn ? 0 : 1)
-                    )
             }
             .buttonStyle(PlainButtonStyle())
             .padding()
