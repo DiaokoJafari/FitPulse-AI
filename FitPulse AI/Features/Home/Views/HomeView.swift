@@ -11,24 +11,27 @@ struct HomeView: View {
     @StateObject private var viewModel = DIContainer.shared.makeHomeViewModel()
     
     var body: some View {
-        VStack(spacing: 30) {
-            VStack(alignment: .leading, spacing: 2) {
-                Text(viewModel.greeting)
-                    .font(.appTitle)
-                Text(viewModel.suggestionMessage)
-                    .font(.appBody)
-                    .foregroundStyle(.black.opacity(0.6))
-            }
-            .multilineTextAlignment(.leading)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.horizontal)
-            
-            GradientRectangleView()
+        ScrollView {
+            VStack(spacing: 30) {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(viewModel.greeting)
+                        .font(.appTitle)
+                    Text(viewModel.suggestionMessage)
+                        .font(.appBody)
+                        .foregroundStyle(.black.opacity(0.6))
+                }
+                .multilineTextAlignment(.leading)
+                .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal)
-            
-            QuickToolsView()
-            
-            Spacer()
+                
+                GradientRectangleView()
+                    .padding(.horizontal)
+                
+                QuickToolsView()
+                
+                TodaysProgressView()
+            }
+            .padding(.vertical)
         }
         
         .task {

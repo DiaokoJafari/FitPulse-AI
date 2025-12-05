@@ -9,10 +9,45 @@ import SwiftUI
 
 struct QuickToolsView: View {
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 16) {
+
             Text("Quick Tools")
-                .font(.appSmallTitle)
+                .font(.system(size: 22, weight: .bold))
                 .padding(.horizontal)
+
+            LazyVGrid(
+                columns: Array(repeating: GridItem(.flexible(), spacing: 16), count: 2),
+                spacing: 16
+            ) {
+                QuickToolItemView(
+                    iconName: "timer",
+                    iconColor: .green,
+                    bgColor: .green,
+                    title: "Timer"
+                )
+
+                QuickToolItemView(
+                    iconName: "square.grid.2x2.fill",
+                    iconColor: .orange,
+                    bgColor: .orange,
+                    title: "BMI Calc"
+                )
+
+                QuickToolItemView(
+                    iconName: "fork.knife",
+                    iconColor: .purple,
+                    bgColor: .purple,
+                    title: "Nutrition"
+                )
+
+                QuickToolItemView(
+                    iconName: "heart.fill",
+                    iconColor: .red,
+                    bgColor: .red,
+                    title: "Heart Rate"
+                )
+            }
+            .padding(.horizontal)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }
