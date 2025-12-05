@@ -36,6 +36,8 @@ public struct MainAppBar: View {
 
             } label: {
                 Image(systemName: isUserLoggedIn ? "person.crop.circle" : "person.crop.circle.badge.plus")
+                    .symbolRenderingMode(.palette)
+                    .foregroundStyle(isUserLoggedIn ? .gray : .green, .gray)
                     .font(.system(size: 43, weight: .light))
                     .foregroundColor(.gray)
             }
