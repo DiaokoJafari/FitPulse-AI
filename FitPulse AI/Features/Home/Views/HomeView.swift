@@ -24,6 +24,7 @@ struct HomeView: View {
             .padding(.horizontal)
             
             GradientRectangleView()
+                .padding(.horizontal)
             
             QuickToolsView()
             
