@@ -29,7 +29,7 @@ struct HomeView: View {
                 
                 QuickToolsView()
                 
-                TodaysProgressView()
+                DailyProgressView()
             }
             .padding(.vertical)
         }

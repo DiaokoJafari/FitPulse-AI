@@ -21,7 +21,7 @@ struct MainTabView: View {
     
     var body: some View {
         ZStack {
-            VStack {
+            VStack(spacing: 0) {
                 MainAppBar(isUserLoggedIn: false)
                 
                 TabView(selection: $selectedTab) {
