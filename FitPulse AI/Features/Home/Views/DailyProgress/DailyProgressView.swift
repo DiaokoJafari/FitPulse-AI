@@ -16,9 +16,9 @@ struct DailyProgressView: View {
                 .padding(.horizontal)
 
             HStack {
-                ProgressItemView(value: 0, title: "Workouts", color: .purple)
-                ProgressItemView(value: 0, title: "Calories", color: .orange)
-                ProgressItemView(value: 0, title: "Minutes", color: .green)
+                DailyProgressItemView(value: 0, title: "Workouts", color: .purple)
+                DailyProgressItemView(value: 0, title: "Calories", color: .orange)
+                DailyProgressItemView(value: 0, title: "Minutes", color: .green)
             }
             .padding()
             .background(

@@ -1,5 +1,5 @@
 //
-//  ProgressItemView.swift
+//  DailyProgressItemView.swift
 //  FitPulse AI
 //
 //  Created by Diaoko Jafari on 05/12/2025.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ProgressItemView: View {
+struct DailyProgressItemView: View {
     let value: Int
     let title: String
     let color: Color

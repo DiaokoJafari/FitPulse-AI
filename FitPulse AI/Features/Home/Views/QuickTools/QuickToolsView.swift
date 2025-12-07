@@ -19,28 +19,28 @@ struct QuickToolsView: View {
                 columns: Array(repeating: GridItem(.flexible(), spacing: 16), count: 2),
                 spacing: 16
             ) {
-                QuickToolItemView(
+                ToolItemView(
                     iconName: "timer",
                     iconColor: .green,
                     bgColor: .green,
                     title: "Timer"
                 )
 
-                QuickToolItemView(
+                ToolItemView(
                     iconName: "square.grid.2x2.fill",
                     iconColor: .orange,
                     bgColor: .orange,
                     title: "BMI Calc"
                 )
 
-                QuickToolItemView(
+                ToolItemView(
                     iconName: "fork.knife",
                     iconColor: .purple,
                     bgColor: .purple,
                     title: "Nutrition"
                 )
 
-                QuickToolItemView(
+                ToolItemView(
                     iconName: "heart.fill",
                     iconColor: .red,
                     bgColor: .red,

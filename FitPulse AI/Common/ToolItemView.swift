@@ -1,5 +1,5 @@
 //
-//  QuickToolItemView.swift
+//  ToolItemView.swift
 //  FitPulse AI
 //
 //  Created by Diaoko Jafari on 05/12/2025.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct QuickToolItemView: View {
+struct ToolItemView: View {
     let iconName: String
     let iconColor: Color
     let bgColor: Color
