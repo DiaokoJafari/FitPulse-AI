@@ -20,7 +20,7 @@ final class Workout {
     init(
         id: UUID = UUID(),
         date: Date = Date(),
-        workoutType: WorkoutType = .fullBody,
+        workoutType: WorkoutType = .strengthTraining,
         repCount: Int? = nil,
         duration: TimeInterval = 0,
         caloriesBurned: Int = 0
@@ -64,44 +64,38 @@ extension Workout {
 
 enum WorkoutType: String, Codable, CaseIterable {
     // Cardio
-    case running, cycling, hiit, jumpRope
+    case running, cycling, hiit
     
     // Strength
-    case upperBody, lowerBody, core, fullBody
+    case strengthTraining
     
     // Flexibility
-    case yoga, pilates, stretching
+    case yoga, pilates
     
     // Recovery
-    case meditation, walking, breathing
+    case meditation, walking
 }
 
 extension WorkoutType {
     var iconName: String {
         switch self {
         case .running: return "figure.run"
-        case .cycling: return "bicycle"
+        case .cycling: return "figure.outdoor.cycle"
         case .hiit: return "flame.fill"
-        case .jumpRope: return "figure.jump.rope"
-        case .upperBody: return "dumbbell"
-        case .lowerBody: return "figure.stand"
-        case .core: return "figure.core"
-        case .fullBody: return "figure.walk"
-        case .yoga: return "leaf.fill"
-        case .pilates: return "figure.stretch"
-        case .stretching: return "figure.stretch"
+        case .strengthTraining: return "dumbbell.fill"
+        case .yoga: return "figure.yoga"
+        case .pilates: return "figure.cooldown"
         case .meditation: return "brain.head.profile"
         case .walking: return "figure.walk"
-        case .breathing: return "lungs.fill"
         }
     }
     
     var iconColor: Color {
         switch self {
-        case .running, .cycling, .hiit, .jumpRope: return .red
-        case .upperBody, .lowerBody, .core, .fullBody: return .purple
-        case .yoga, .pilates, .stretching: return .green
-        case .meditation, .walking, .breathing: return .blue
+        case .running, .cycling, .hiit: return .red
+        case .strengthTraining: return .purple
+        case .yoga, .pilates: return .green
+        case .meditation, .walking: return .blue
         }
     }
     
@@ -114,17 +108,11 @@ extension WorkoutType {
         case .running: return "Running"
         case .cycling: return "Cycling"
         case .hiit: return "HIIT"
-        case .jumpRope: return "Jump Rope"
-        case .upperBody: return "Upper Body"
-        case .lowerBody: return "Lower Body"
-        case .core: return "Core"
-        case .fullBody: return "Full Body"
+        case .strengthTraining: return "Strength Training"
         case .yoga: return "Yoga Flow"
         case .pilates: return "Pilates"
-        case .stretching: return "Stretching"
         case .meditation: return "Meditation"
         case .walking: return "Walking"
-        case .breathing: return "Breathing"
         }
     }
 }

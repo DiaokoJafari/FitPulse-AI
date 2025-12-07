@@ -15,11 +15,11 @@ struct DailyProgressItemView: View {
     var body: some View {
         VStack(spacing: 4) {
             Text("\(value)")
-                .font(.system(size: 22, weight: .bold))
+                .font(.appTitle)
                 .foregroundColor(color)
 
             Text(title)
-                .font(.system(size: 14))
+                .font(.appBody)
                 .foregroundColor(.gray)
         }
         .frame(maxWidth: .infinity)

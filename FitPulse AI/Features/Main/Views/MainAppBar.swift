@@ -26,7 +26,7 @@ public struct MainAppBar: View {
             .padding(.leading)
             
             Text("Fit\nPulse")
-                .font(.system(size: 17, weight: .semibold))
+                .font(.appSmallTitle)
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.leading)
             
