@@ -1,0 +1,115 @@
+
+[
+    {
+        "id": "1A2B3C4D-5E6F-7A8B-9012-3456789ABCDE",
+        "date": "2025-12-06T08:00:00Z",
+        "workoutType": "running",
+        "repCount": null,
+        "duration": 1800,
+        "caloriesBurned": 250
+    },
+    {
+        "id": "2B3C4D5E-6F7A-8B90-1234-56789ABCDEF0",
+        "date": "2025-12-05T09:30:00Z",
+        "workoutType": "cycling",
+        "repCount": null,
+        "duration": 2400,
+        "caloriesBurned": 300
+    },
+    {
+        "id": "3C4D5E6F-7A8B-9012-3456-789ABCDEF123",
+        "date": "2025-12-04T07:45:00Z",
+        "workoutType": "hiit",
+        "repCount": null,
+        "duration": 1500,
+        "caloriesBurned": 320
+    },
+    {
+        "id": "4D5E6F7A-8B90-1234-5678-9ABCDEF12345",
+        "date": "2025-12-03T18:00:00Z",
+        "workoutType": "jumpRope",
+        "repCount": 50,
+        "duration": 900,
+        "caloriesBurned": 200
+    },
+    {
+        "id": "5E6F7A8B-9012-3456-789A-BCDEF1234567",
+        "date": "2025-12-02T10:15:00Z",
+        "workoutType": "upperBody",
+        "repCount": 20,
+        "duration": 1200,
+        "caloriesBurned": 220
+    },
+    {
+        "id": "6F7A8B90-1234-5678-9ABC-DEF123456789",
+        "date": "2025-12-01T12:00:00Z",
+        "workoutType": "lowerBody",
+        "repCount": 25,
+        "duration": 1300,
+        "caloriesBurned": 240
+    },
+    {
+        "id": "7A8B9012-3456-789A-BCDE-F123456789AB",
+        "date": "2025-11-30T14:30:00Z",
+        "workoutType": "core",
+        "repCount": 30,
+        "duration": 1000,
+        "caloriesBurned": 180
+    },
+    {
+        "id": "8B901234-5678-9ABC-DEF1-23456789ABCD",
+        "date": "2025-11-29T08:00:00Z",
+        "workoutType": "fullBody",
+        "repCount": 15,
+        "duration": 1800,
+        "caloriesBurned": 280
+    },
+    {
+        "id": "9C012345-6789-ABCD-EF12-3456789ABCDE",
+        "date": "2025-11-28T09:15:00Z",
+        "workoutType": "yoga",
+        "repCount": null,
+        "duration": 2400,
+        "caloriesBurned": 180
+    },
+    {
+        "id": "0D123456-789A-BCDE-F123-456789ABCDEF",
+        "date": "2025-11-27T07:30:00Z",
+        "workoutType": "pilates",
+        "repCount": null,
+        "duration": 2000,
+        "caloriesBurned": 160
+    },
+    {
+        "id": "1E234567-89AB-CDEF-1234-56789ABCDEF0",
+        "date": "2025-11-26T10:45:00Z",
+        "workoutType": "stretching",
+        "repCount": null,
+        "duration": 900,
+        "caloriesBurned": 100
+    },
+    {
+        "id": "2F345678-9ABC-DEF1-2345-6789ABCDEF12",
+        "date": "2025-11-25T06:00:00Z",
+        "workoutType": "meditation",
+        "repCount": null,
+        "duration": 600,
+        "caloriesBurned": 50
+    },
+    {
+        "id": "3456789a-bcde-f123-4567-89abcdef1234",
+        "date": "2025-11-24T08:30:00Z",
+        "workoutType": "walking",
+        "repCount": null,
+        "duration": 1800,
+        "caloriesBurned": 120
+    },
+    {
+        "id": "4567890a-bcde-f123-4567-89abcdef1234",
+        "date": "2025-11-23T09:45:00Z",
+        "workoutType": "breathing",
+        "repCount": null,
+        "duration": 300,
+        "caloriesBurned": 30
+    }
+]

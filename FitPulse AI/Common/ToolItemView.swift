@@ -11,29 +11,24 @@ struct ToolItemView: View {
     let iconName: String
     let iconColor: Color
     let bgColor: Color
-    let title: String
+    var title: String = ""
+    var size: CGFloat = 60
 
     var body: some View {
         VStack(spacing: 12) {
-            ZStack {
-                RoundedRectangle(cornerRadius: 12)
-                    .fill(bgColor.opacity(0.25))
-                    .frame(width: 60, height: 60)
+            ToolIconView(
+                iconName: iconName,
+                iconColor: iconColor,
+                bgColor: bgColor,
+                size: size
+            )
 
-                Image(systemName: iconName)
-                    .font(.system(size: 28, weight: .semibold))
-                    .foregroundColor(iconColor)
+            if !title.isEmpty {
+                Text(title)
+                    .font(.appBody)
             }
-
-            Text(title)
-                .font(.system(size: 16, weight: .medium))
-                .foregroundColor(.black)
         }
         .frame(maxWidth: .infinity)
         .padding()
-        .background(
-            RoundedRectangle(cornerRadius: 16)
-                .stroke(Color.gray.opacity(0.15), lineWidth: 1)
-        )
     }
 }

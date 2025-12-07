@@ -12,7 +12,7 @@ struct QuickToolsView: View {
         VStack(alignment: .leading, spacing: 16) {
 
             Text("Quick Tools")
-                .font(.system(size: 22, weight: .bold))
+                .font(.appSmallTitle)
                 .padding(.horizontal)
 
             LazyVGrid(
@@ -25,6 +25,7 @@ struct QuickToolsView: View {
                     bgColor: .green,
                     title: "Timer"
                 )
+                .borderedCard()
 
                 ToolItemView(
                     iconName: "square.grid.2x2.fill",
@@ -32,6 +33,7 @@ struct QuickToolsView: View {
                     bgColor: .orange,
                     title: "BMI Calc"
                 )
+                .borderedCard()
 
                 ToolItemView(
                     iconName: "fork.knife",
@@ -39,6 +41,7 @@ struct QuickToolsView: View {
                     bgColor: .purple,
                     title: "Nutrition"
                 )
+                .borderedCard()
 
                 ToolItemView(
                     iconName: "heart.fill",
@@ -46,6 +49,7 @@ struct QuickToolsView: View {
                     bgColor: .red,
                     title: "Heart Rate"
                 )
+                .borderedCard()
             }
             .padding(.horizontal)
         }

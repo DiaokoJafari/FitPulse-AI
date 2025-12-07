@@ -30,6 +30,8 @@ struct HomeView: View {
                 QuickToolsView()
                 
                 DailyProgressView()
+                
+                RecentWorkoutsView()
             }
             .padding(.vertical)
         }
