@@ -32,6 +32,8 @@ struct HomeView: View {
                 DailyProgressView()
                 
                 RecentWorkoutsView()
+                
+                WeeklySummaryView()
             }
             .padding(.vertical)
         }

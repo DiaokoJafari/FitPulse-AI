@@ -20,7 +20,7 @@ struct RecentWorkoutsView: View {
                 Spacer()
                 
                 Text("View All")
-                    .font(.appBody)
+                    .font(.appButton)
                     .foregroundColor(.blue)
             }
             
