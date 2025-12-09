@@ -24,10 +24,11 @@ struct WeeklySummaryView: View {
             card
                 .padding()
         }
+        .padding(.vertical)
     }
     
     private var card: some View {
-        VStack(spacing: 0) {
+        VStack {
             ForEach(summaryItems) { item in
                 SummaryRowView(
                     title: item.title,

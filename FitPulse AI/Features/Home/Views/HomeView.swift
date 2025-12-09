@@ -30,10 +30,22 @@ struct HomeView: View {
                 QuickToolsView()
                 
                 DailyProgressView()
+
                 
-                RecentWorkoutsView()
+                if UIDevice.isIpad {
+                    HStack {
+                        RecentWorkoutsView()
+
+                        WeeklySummaryView()
+                    }
+                } else {
+                    VStack {
+                        RecentWorkoutsView()
+
+                        WeeklySummaryView()
+                    }
+                }
                 
-                WeeklySummaryView()
             }
             .padding(.vertical)
         }

@@ -14,31 +14,30 @@ struct SummaryRowView: View {
     let color: Color
     
     var body: some View {
-        HStack(alignment: .bottom) {
-            VStack(alignment: .leading) {
+        VStack(alignment: .leading) {
+            HStack {
                 Text(title)
                     .font(.appBody)
                     .fontWeight(.semibold)
                 
-                GeometryReader { geometry in
-                    ZStack(alignment: .leading) {
-                        Capsule()
-                            .fill(Color.gray.opacity(0.2))
-                            .frame(height: 8)
-                        
-                        Capsule()
-                            .fill(color)
-                            .frame(width: geometry.size.width * progress, height: 8)
-                            .animation(.easeInOut, value: progress)
-                    }
-                }
+                Spacer()
+                
+                Text(value)
+                    .font(.appBody)
             }
             
-            Spacer()
-            
-            Text(value)
-                .font(.appBody)
-                .frame(width: 40)
+            GeometryReader { geometry in
+                ZStack(alignment: .leading) {
+                    Capsule()
+                        .fill(Color.gray.opacity(0.2))
+                        .frame(height: 8)
+                    
+                    Capsule()
+                        .fill(color)
+                        .frame(width: geometry.size.width * progress, height: 8)
+                        .animation(.easeInOut, value: progress)
+                }
+            }
         }
         .padding()
     }
