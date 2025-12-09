@@ -52,7 +52,7 @@ struct QuickToolsView: View {
                 .padding(.horizontal)
             
             LazyVGrid(
-                columns: Array(repeating: GridItem(.flexible(), spacing: 16), count: 2),
+                columns: Array(repeating: GridItem(.flexible(), spacing: 16), count: UIDevice.isIpad ? 4 : 2),
                 spacing: 16
             ) {
                 ForEach(tools) { tool in

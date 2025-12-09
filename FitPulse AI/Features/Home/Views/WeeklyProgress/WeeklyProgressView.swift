@@ -17,7 +17,7 @@ struct WeeklySummaryView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Weekly Summary")
+            Text("Weekly Progress")
                 .font(.appSmallTitle)
                 .padding(.horizontal)
             
