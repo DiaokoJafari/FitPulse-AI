@@ -11,7 +11,7 @@ struct HomeView: View {
     @StateObject private var viewModel = DIContainer.shared.makeHomeViewModel()
     
     var body: some View {
-        ScrollView {
+        ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 30) {
                 VStack(alignment: .leading, spacing: 2) {
                     Text(viewModel.greeting)
@@ -49,7 +49,8 @@ struct HomeView: View {
             }
             .padding(.vertical)
         }
-        
+        .scrollBounceBehavior(.basedOnSize)
+
         .task {
             viewModel.loadData()
         }
