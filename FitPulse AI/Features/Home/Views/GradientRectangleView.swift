@@ -13,16 +13,19 @@ struct GradientRectangleView: View {
         let startColor = Color(red: 100/255, green: 100/255, blue: 232/255)
         let endColor = Color(red: 135/255, green: 60/255, blue: 226/255)
 
-        VStack(spacing: 14) {
+        VStack(alignment: UIDevice.isIpad ? .leading : .center, spacing: 14) {
             HStack {
                 Text("Today's Workout")
-                    .font(.appSmallTitle)
+                    .font(.appLargeTitle)
                     .fontWeight(.bold)
                     .foregroundStyle(.white)
                 
-                Spacer()
+                if UIDevice.isIphone {
+                    Spacer()
+                }
+                
                 Image(systemName: "flame.fill")
-                    .font(.system(size: 20))
+                    .font(.system(size: UIDevice.isIpad ? 24 : 20))
                     .foregroundColor(.orange)
             }
             
@@ -44,7 +47,9 @@ struct GradientRectangleView: View {
                     .font(.appBody)
                     .foregroundStyle(.white)
                 
-                Spacer()
+                if UIDevice.isIphone {
+                    Spacer()
+                }
                 
                 Image(systemName: "bolt.fill")
                     .font(.system(size: 14))
@@ -59,11 +64,11 @@ struct GradientRectangleView: View {
                 print("Button tapped")
             }) {
                 Text("Start Workout")
-                    .font(.appSmallTitle)
+                    .font(.appBody)
                     .fontWeight(.bold)
                     .foregroundColor(.purple)
                     .padding()
-                    .frame(maxWidth: .infinity)
+                    .frame(maxWidth: UIDevice.isIphone ? .infinity : nil)
             }
             .background(Color.white)
             .cornerRadius(16)
